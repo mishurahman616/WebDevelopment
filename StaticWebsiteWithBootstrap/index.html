@@ -4,82 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link href="fontawesome\css\all.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+    <script src="style\bootstrap\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/css/style.css">
 
     <title>Mishu | Simple Website</title>
 </head>
 
 <body>
     <div class="container">
-        <header class="header">
-            <div class="headerleft">
-                <h2>Logo</h2>
-            </div>
-            <div class="headerright">
-                <a href="index.html">
-                    <h2>ABCD.com</h2>
-                </a>
+        <header class="header row">
+            <div class="headerleft col-md-1 col-sm-2">
+                <div class="logobox bg-dark text-white rounded-circle text-center mt-1 pt-3">
+                    <h2>Logo</h2>
+                </div>
 
-                <p>This is my first website</p>
+            </div>
+            <div class="headerright col-md-11 col-sm-10">
+                <div class="mx-md-5 pt-4">
+                    <a href="index.html" class="text-reset text-decoration-none">
+                        <h2>ABCD.com</h2>
+                    </a>
+                    <p>This is my first website</p>
+                </div>
+
+
+
             </div>
 
         </header>
 
-        <nav class="nav">
-            <a class="active" href="index.html">Home</a>
-            <a href="learning.html">My Learning</a>
-            <a href="about.html">About</a>
-            <a href="login.html">Login</a>
-            <a href="signup.html">SignUp</a>
-            <a href="contact.html">Contact Us</a>
+        <nav class="row navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">ABCD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active-item text-white" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="learning.html">My Learning</a></li>
+                        <li class="nav-item"><a class="nav-link  text-white" aria-current="page" href="about.html ">About</a></li>
+                        <li class="nav-item"><a class="nav-link  text-white" href="login.html ">Login</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="signup.html ">SignUp</a></li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="contact.html ">Contact Us</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
 
 
-        <main class="main">
-            <div class="mainleftsidebar">
-                <p>This place for Advertisement</p>
+        <main class="main row">
+            <div class="sidebar mainleftsidebar col-md-3">
+                <div class="p-4 mt-2">
+                    <p>This place for Advertisement</p>
+                </div>
+
             </div>
-            <div class="maincontent">
-                <div class="item image1"><img src="image/image1.jpg" alt="Flower Image" width="100%" height="100%"></div>
-                <div class="item image2"><img src="image/image2.jpg" alt="Flower Image" width="100%" height="100%"></div>
-                <div class="item image3"><img src="image/image3.jpg" alt="Flower Image" width="100%" height="100%"></div>
-                <div class="item image4"><img src="image/image4.jpg" alt="Flower Image" width="100%" height="100%"></div>
+            <div class="col-md-6 maincontent ">
+                <div class="row row-cols-md-2 row-cols-sm-1">
+                    <div class="item image1"><img class="rounded-2" src="image/image1.jpg " alt="Flower Image " width="100% " height="100% "></div>
+                    <div class="item image2"><img class="rounded-2" src="image/image2.jpg " alt="Flower Image " width="100% " height="100% "></div>
+                    <div class="item image3"><img class="rounded-2" src="image/image3.jpg " alt="Flower Image " width="100% " height="100% "></div>
+                    <div class="item image4"><img class="rounded-2" src="image/image4.jpg " alt="Flower Image " width="100% " height="100% "></div>
+                </div>
                 <!-- end maincontent-->
             </div>
-            <div class="mainrightsidebar">
-                <p>This place for Advertisement</p>
+            <div class="sidebar mainrightsidebar col-md-3">
+                <div class="p-4 mt-2">
+                    <p>This place for Advertisement</p>
+                </div>
+
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="item footerleft">
+        <footer class="row footer row-cols-sm-1">
+            <div class="col-md-7 footerleft text-white text-md-end ">
                 <p>&copy; copyright
-                    <a href="https://www.facebook.com/mishurahman70" style="text-decoration: none;">mishurahman</a> 2021
+                    <a class="text-reset" href="https://www.facebook.com/mishurahman70 " style="text-decoration: none; ">mishurahman</a> 2021
                 </p>
             </div>
             <!-- end footerleft-->
 
-            <div class="item footerright social">
-                <div>
-                    <a href="#"> <i class="fab fa-facebook-f"></i> </a>
-                </div>
-                <div>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-                <div>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
+            <div class="col-md-5 footerright social">
+                <ul class="list-group list-group-horizontal justify-content-end">
+                    <li class="list-group-item rounded-circle">
+                        <a href="# "> <i class="fab fa-facebook-f "></i> </a>
+                    </li>
+                    <li class="list-group-item rounded-circle">
+                        <a href="# "><i class="fab fa-linkedin-in "></i></a>
+                    </li>
+                    <li class="list-group-item rounded-circle youtubelogo ">
+                        <a href="# "><i style="color:red;" class="fab fa-youtube "></i></a>
+                    </li>
+                    <li class="list-group-item rounded-circle">
+                        <a href="# "><i class="fab fa-twitter "></i></a>
+                    </li>
+                </ul>
             </div>
             <!-- end footerright-->
         </footer>
-        <!-- end container class-->
+        <!-- end footer class-->
     </div>
+    <!-- end container class-->
 </body>
 
 </html>
